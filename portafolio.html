@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio Digital</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #eef6f9;
+    color: #333;
+}
+
+/* PORTADA */
+header {
+    min-height: 80vh;
+    background: linear-gradient(rgba(6, 40, 61, 0.65), rgba(6, 40, 61, 0.65)),
+                url("C:\Users\milag\Downloads\Portafolio\fondo.jpg.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+header h1 {
+    font-size: 55px;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 22px;
+    margin: 12px 0;
+}
+
+.nombre {
+    background: rgba(255,255,255,0.18);
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* MENÚ */
+nav {
+    background: #06364a;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+/* SECCIONES */
+section {
+    padding: 45px 20px;
+}
+
+.card {
+    background: white;
+    max-width: 1000px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+h2 {
+    color: #0b6b83;
+    font-size: 30px;
+    border-left: 8px solid #70c1b3;
+    padding-left: 15px;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+/* TARJETAS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.mini-card {
+    background: linear-gradient(135deg, #eef9f8, #ffffff);
+    padding: 25px;
+    border-radius: 20px;
+    border-top: 6px solid #0b6b83;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.mini-card:hover {
+    transform: translateY(-6px);
+}
+
+.mini-card h3 {
+    color: #06364a;
+}
+
+/* BOTONES */
+.btn {
+    display: inline-block;
+    background: #0b6b83;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #06364a;
+}
+
+/* FOOTER */
+footer {
+    background: #06364a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+</style>
+</head>
+
+<body>
+
+<header id="inicio">
+    <h1>Portafolio Digital</h1>
+    <p>Proyecto Final del Curso</p>
+    <div class="nombre">Jesús Joel Rodríguez Martínez</div>
+</header>
+
+<nav>
+    <a href="#objetivo">Objetivo</a>
+    <a href="#autor">Autor</a>
+    <a href="#rutinas">Rutinas</a>
+    <a href="#instrumentos">Instrumentos</a>
+    <a href="#autoevaluacion">Autoevaluación</a>
+    <a href="#observaciones">Observaciones</a>
+</nav>
+
+<section>
+<div class="card">
+    <h2>Bienvenida</h2>
+    <p>
+        Bienvenido a mi portafolio digital. En este espacio presento las evidencias,
+        actividades, aprendizajes y reflexiones desarrolladas durante el curso.
+        Este sitio representa mi proceso de crecimiento académico, responsabilidad
+        y compromiso con la mejora continua.
+    </p>
+</div>
+</section>
+
+<section id="objetivo">
+<div class="card">
+    <h2>Objetivo del Portafolio</h2>
+    <p>
+        El objetivo de este portafolio digital es recopilar, organizar y presentar
+        las actividades realizadas durante el módulo, evidenciando los aprendizajes
+        adquiridos y reflexionando sobre el proceso de aprender a aprender.
+    </p>
+</div>
+</section>
+
+<section id="autor">
+<div class="card">
+    <h2>Identificación del Autor</h2>
+    <p><strong>Nombre:</strong> Jesús Joel Rodríguez Martínez</p>
+    <p><strong>Curso:</strong> Sistema de Evaluación Aplicada a la Educación Superior</p>
+    <p><strong>Profesor:</strong> Dr. Gustavo González</p>
+    <p><strong>Institución:</strong> Institución Superior de Administración y Educación ISAE</p>
+    <p>
+        Soy un estudiante comprometido con mi formación académica. Este portafolio
+        demuestra mi esfuerzo, responsabilidad y avance durante el desarrollo del curso.
+    </p>
+</div>
+</section>
+
+<section id="rutinas">
+<div class="card">
+    <h2>Rutinas de Pensamiento</h2>
+    <p>
+        En esta sección se incorporan las rutinas de pensamiento utilizadas durante
+        el módulo, las cuales ayudaron a organizar ideas, reflexionar sobre los
+        aprendizajes y fortalecer el pensamiento crítico.
+    </p>
+
+    <div class="grid">
+        <div class="mini-card">
+            <h3>🧠 SQA y Escalera de Metacognición</h3>
+            <p>¿Qué sé? ¿Qué quiero saber? ¿Qué aprendí? Reflexión sobre cómo aprendí y qué puedo mejorar.</p>
+            <a class="btn" href="https://docs.google.com/document/d/1qF34WSQEkMNp080l0g021875tSNxAQE9/edit?usp=sharing&ouid=117412251310910595227&rtpof=true&sd=true" target="_blank">Ver actividad</a>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="instrumentos">
+<div class="card">
+    <h2>Banco de Instrumentos</h2>
+    <p>
+        Aquí se presentan los instrumentos, actividades y productos elaborados durante
+        el curso. Cada evidencia refleja la aplicación de los conocimientos adquiridos.
+    </p>
+
+    <div class="grid">
+        <div class="mini-card">
+            <h3>📄 Actividad Individual #1</h3>
+            <p>Primera evidencia desarrollada durante el módulo.</p>
+            <a class="btn" href="https://docs.google.com/document/d/1s0LAJ-2a6jNYSIeDKzsYL3achjSYOgDx/edit?usp=sharing&ouid=117412251310910595227&rtpof=true&sd=true" target="_blank">Abrir</a>
+        </div>
+
+        <div class="mini-card">
+            <h3>🎨 Actividad Individual #2</h3>
+            <p>Trabajo realizado como parte del proceso formativo.</p>
+            <a class="btn" href="https://canva.link/u0ztlplhiytt3bv" target="_blank">Abrir</a>
+        </div>
+
+        <div class="mini-card">
+            <h3>📝 Actividad Individual #3</h3>
+            <p>Reflexión y desarrollo de aprendizajes del curso.</p>
+            <a class="btn" href="https://docs.google.com/document/d/1JQOhDXZ4Q8QWUmAedAQMqmY6FgeyMAEI/edit?usp=sharing&ouid=117412251310910595227&rtpof=true&sd=true" target="_blank">Abrir</a>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="autoevaluacion">
+<div class="card">
+    <h2>Autoevaluación del Módulo</h2>
+    <p>
+        La autoevaluación me permitió analizar mi desempeño, reconocer mis fortalezas
+        y valorar las áreas que debo seguir mejorando. A través de este proceso pude
+        reflexionar sobre mi responsabilidad, participación y avances durante el curso.
+    </p>
+
+    <p>
+        Considero que este módulo fue importante porque me ayudó a comprender mejor
+        la importancia de organizar mis aprendizajes, presentar evidencias y reflexionar
+        sobre la manera en que aprendo.
+    </p>
+
+    <a class="btn" href="https://docs.google.com/document/d/1BLhq8XZuoRYl_1lpXmmNcSje9xZ0DowZ/edit?usp=sharing&ouid=117412251310910595227&rtpof=true&sd=true" target="_blank">Ver autoevaluación</a>
+</div>
+</section>
+
+<section id="observaciones">
+<div class="card">
+    <h2>Observaciones Generales</h2>
+    <p>
+        Durante el desarrollo del curso logré fortalecer habilidades importantes como
+        la organización, la reflexión, el pensamiento crítico y la responsabilidad
+        académica. Este portafolio evidencia mi proceso de aprendizaje y demuestra
+        el esfuerzo realizado en cada una de las actividades.
+    </p>
+
+    <p>
+        Como aspecto positivo, reconozco que pude avanzar en mi capacidad para analizar
+        mis propios aprendizajes. Como aspecto a mejorar, debo continuar fortaleciendo
+        mi organización del tiempo y la calidad de mis entregas académicas.
+    </p>
+</div>
+</section>
+
+<footer>
+    <p>Portafolio Digital | Proyecto Final | 2026</p>
+    <p>Elaborado por: Jesús Joel Rodríguez Martínez</p>
+</footer>
+
+</body>
+</html>
